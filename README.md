@@ -18,7 +18,40 @@
 
 方案选择：
 
-​	树形描述语言采用baidu团队开发的kitymind，其源文件为结构明确的json文件
+​	树形描述语言采用baidu团队开发的kitymind（km），其源文件为结构明确的json文件
 
 方便便利和查找。
 
+​	工作流程：
+
+​	文件合法性检查与km2python-object：
+
+​		json检查
+
+​		data数据(km中描述节点的key)的note-json检查
+
+​		以上两步在km文件转化为python对象时同步完成
+
+​	遍历节点，并记录遍历路径，遍历节点后，将该节点的note部分内容转换为api-python代码，使用遍历作为路由。
+
+​	api-python部分技术选型：
+
+​		使用python-django框架,django框架具有优秀的分模块和分文件属性。
+
+方案任务：
+
+​	描述文件检查器
+
+​		检查描述文件并转换为python对象
+
+​	解释器
+
+​		遍历python对象并将各节点使用构造器构造
+
+​	构造器
+
+​		将参数构造成django模块
+
+
+
+​	
