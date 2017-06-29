@@ -1,0 +1,91 @@
+{
+    "root": {
+        "data": {
+            "id": "36cf5215eb1f",
+            "created": 1498661803,
+            "text": "Gateway"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "bdwf9xiecz5s",
+                    "created": 1498661815471,
+                    "text": "用户验证",
+                    "note": "{\n\t\"fileds\":[\n\"user_token\"\n]\n}"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "bdwfam6zrnr4",
+                            "created": 1498661869201,
+                            "text": "用户数据"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bdwfbwmpr94w",
+                                    "created": 1498661970284,
+                                    "text": "修改数据"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bdwfc9asry0w",
+                                    "created": 1498661997861,
+                                    "text": "新建用户"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bdwfcbpqexog",
+                                    "created": 1498662003118,
+                                    "text": "查询用户"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "bdwfaxxw38xs",
+                            "created": 1498661894772,
+                            "text": "订单",
+                            "layout": null
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "bdwfbzzs9ou8",
+                                    "created": 1498661977604,
+                                    "text": "新建订单"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bdwfc3x0qt4w",
+                                    "created": 1498661986144,
+                                    "text": "修改订单"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "bdwfc6i8rqps",
+                                    "created": 1498661991781,
+                                    "text": "查询订单"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "structure",
+    "theme": "snow",
+    "version": "1.4.43"
+}
