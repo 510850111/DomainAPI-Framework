@@ -20,7 +20,7 @@
 
 ​	树形描述语言采用baidu团队开发的kitymind（km），其源文件为结构明确的json文件
 
-方便便利和查找。
+方便遍历和查找。
 
 ​	工作流程：
 
@@ -36,7 +36,7 @@
 
 ​	api-python部分技术选型：
 
-​		使用python-django框架,django框架具有优秀的分模块和分文件属性。
+​		使用SinglePage框架，SinglePage是我另一个开源项目，对RESTful风格的API建设支持良好。
 
 方案任务：
 
