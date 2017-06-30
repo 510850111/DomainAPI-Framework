@@ -37,12 +37,15 @@
 ​	api-python部分技术选型：
 
 ​		使用SinglePage框架，SinglePage是我另一个开源项目，对RESTful风格的API建设支持良好。
+		Django，Django是一个使用广泛且功能完善的Python Web框架
 
 方案任务：
 
 ​	描述文件检查器
 
 ​		检查描述文件并转换为python对象
+		17.6.30:
+			对象遍历生成路由
 
 ​	解释器
 
@@ -50,7 +53,7 @@
 
 ​	构造器
 
-​		将参数构造成django模块
+​		将参数构造成api-python模块
 
 
 
