@@ -32,9 +32,8 @@ class Describer(object):
         """
         data = None
         if 'data' in dir(tree):
-            print(self._route)
-            print(tree.data.text)
-            data = tree.data.text
+            data = tree.data
+            self.make_a_route(self._route, data)
         if 'children' in dir(tree):
             self._route.append(data)
             tree = self.get_children(tree)
@@ -43,6 +42,9 @@ class Describer(object):
                 self.traversal(t)
             self._route.remove(data)
 
+    def make_a_route(self, route, data):
+        print([r.text for r in route])
+        print(data.text)
 
 if __name__ == '__main__':
     des = Describer('Gateway.km')
