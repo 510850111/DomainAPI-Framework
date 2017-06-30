@@ -45,6 +45,9 @@ class Describer(object):
     def make_a_route(self, route, data):
         print([r.text for r in route])
         print(data.text)
+        if "note" in dir(data):
+            note = self.json_to_namespace(data.note)
+            print(note)
 
 if __name__ == '__main__':
     des = Describer('Gateway.km')
