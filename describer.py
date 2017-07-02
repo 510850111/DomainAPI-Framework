@@ -26,20 +26,23 @@ class Describer(object):
     def get_children(self, root):
         return root.children
 
-    def traversal(self, tree):
+    def traversal(self, tree, make_a_route=None):
         """
         遍历数据并生成路由路径
         """
         data = None
         if 'data' in dir(tree):
             data = tree.data
-            self.make_a_route(self._route, data)
+            if make_a_route:
+                make_a_route(self._route, data)    
+            else:
+                self.make_a_route(self._route, data)
         if 'children' in dir(tree):
             self._route.append(data)
             tree = self.get_children(tree)
         if isinstance(tree, (list, set)):
             for t in tree:
-                self.traversal(t)
+                self.traversal(t,make_a_route)
             self._route.remove(data)
 
     def make_a_route(self, route, data):
