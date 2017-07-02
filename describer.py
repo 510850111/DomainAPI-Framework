@@ -48,6 +48,7 @@ class Describer(object):
         if "note" in dir(data):
             note = self.json_to_namespace(data.note)
             print(note)
+    
 
 if __name__ == '__main__':
     des = Describer('Gateway.km')

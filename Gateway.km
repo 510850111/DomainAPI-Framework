@@ -11,7 +11,7 @@
                     "id": "bdwf9xiecz5s",
                     "created": 1498661815471,
                     "text": "用户验证",
-                    "note": "{\n\t\"fileds\":[\n    \t\"id\",\n        \"name\"\n    ]\n}"
+                    "note": "{\n\t\"fileds\":[\n\t\t{\n        \t\"column_name\":\"id\",\n            \"column_type\":\"Integer\",\n            \"column_argments\":{\n            \t\"primary_key\":true\n            }\n        },\n        {\n        \t\"column_name\":\"name\",\n            \"column_type\":\"String(140)\",\n            \"column_argments\":{}\n        }\n    ]\n}"
                 },
                 "children": [
                     {
